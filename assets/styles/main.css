@@ -3,10 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 :root {
@@ -39,34 +39,34 @@ a {
 ul {
   list-style: none;
 }
-header{
+header {
   position: sticky;
   top: 0;
   background-color: var(--dark-gunmetal);
   padding: 15px 0;
 }
-header .container{
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .logo a{
+header .container .logo a {
   font-size: 40px;
 }
-header .container nav{
+header .container nav {
   position: relative;
 }
-header .container a{
+header .container a {
   color: var(--white);
 }
-@media (max-width:991px) {
-  header .container label img{
+@media (max-width: 991px) {
+  header .container label img {
     cursor: pointer;
   }
-  header .container input{
+  header .container input {
     appearance: none;
   }
-  header .container nav ul{
+  header .container nav ul {
     display: none;
     position: absolute;
     min-width: 250px;
@@ -74,19 +74,44 @@ header .container a{
     top: 43px;
     background-color: var(--dark-gunmetal);
   }
-  header .container nav ul li{
+  header .container nav ul li {
     padding: 20px;
   }
-  header .container input:checked + ul{
+  header .container input:checked + ul {
     display: block;
   }
 }
-@media (min-width:992px) {
-  header .container input , label{
+@media (min-width: 992px) {
+  header .container input,
+  label {
     display: none;
   }
-  header .container nav ul{
+  header .container nav ul {
     display: flex;
     gap: 50px;
   }
+}
+.hero {
+  background-color: var(--platinum);
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.hero .container .info h1 {
+  font-size: 50px;
+}
+.hero .container .info p {
+  font-size: 13px;
+}
+.hero .container .info a {
+  display: block;
+  width: fit-content;
+  color: var(--white);
+  background-color: var(--dark-gunmetal);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 15px;
 }

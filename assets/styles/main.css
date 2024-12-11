@@ -12,6 +12,7 @@ body {
 :root {
   --white: #ffffff;
   --dark-gunmetal: #212529;
+  --platinum2: #676a6c50;
   --platinum: #dee2e6;
 }
 .container {
@@ -173,4 +174,43 @@ header .container a {
 }
 .services .container .service h3 {
   margin: 10px;
+}
+.blog .container h2 {
+  text-align: center;
+}
+.blog .container .blog1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 20px;
+}
+.blog .container .learning {
+  width: calc(50% - 20px);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--platinum);
+  border-radius: 10px;
+}
+.blog .container .learning .learn {
+  padding: 15px;
+}
+.blog .container .learning .learn h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.blog .container .learning .learn p {
+  line-height: 1.2;
+}
+.blog .container .learning .space {
+  background-color: var(--platinum2);
+  width: 50%;
+  height: 200px;
+  border-radius: 10px;
+}
+@media (max-width:991px) {
+  .blog .container .learning .space {
+    display: none;
+  }
 }

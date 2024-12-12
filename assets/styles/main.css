@@ -148,6 +148,7 @@ header .container a {
 .about_me .container .about a:hover {
   background-color: var(--dark-gunmetal);
   color: var(--white);
+  transition: 0.5s;
 }
 .services {
   background-color: var(--platinum);

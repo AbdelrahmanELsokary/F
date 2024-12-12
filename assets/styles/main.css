@@ -209,8 +209,72 @@ header .container a {
   height: 200px;
   border-radius: 10px;
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .blog .container .learning .space {
     display: none;
   }
+}
+footer {
+  background-color: var(--platinum);
+  padding: 30px 0;
+  margin-top: 30px;
+}
+footer h2 {
+  text-align: center;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+footer .container .contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+footer .container .contact .message {
+  flex-grow: 1;
+}
+footer .container .contact .message .send_me {
+  display: flex;
+}
+footer .container .message input,
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--dark-gunmetal);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 10px 5px 0 0;
+}
+footer .container .message input::placeholder {
+  color: var(--white);
+}
+footer .container .message textarea {
+  resize: none;
+  min-width: 363px;
+  min-height: 150px;
+}
+footer .container .message textarea::placeholder {
+  color: var(--white);
+}
+footer .container .social_media a {
+  display: block;
+  display: flex;
+  align-items: center;
+  color: var(--dark-gunmetal);
+  font-weight: 600;
+  padding-top: 15px;
+}
+footer .container .social_media a img {
+  padding-right: 10px;
+}
+footer .container .message input[type="submit"] {
+  background-color: var(--platinum2);
+  color: var(--dark-gunmetal);
+  font-weight: 600;
+  padding: 10px 20px;
 }

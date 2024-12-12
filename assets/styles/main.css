@@ -84,6 +84,9 @@ header .container a {
   header .container nav ul li {
     padding: 20px;
   }
+  header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid;
+  }
   header .container input:checked + ul {
     display: block;
   }
